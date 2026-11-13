@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lantern Support</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #6e6e73; --bg: #fff; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f5f5f7; --muted: #a1a1a6; --bg: #000; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 32px; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin-top: 32px; }
+  .muted { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>Lantern Support</h1>
+<p class="muted">Lantern is an inspector for Model Context Protocol (MCP) servers on iPhone and iPad.</p>
+
+<h2>Contact</h2>
+<p>For help, bug reports or feature requests, email <a href="mailto:aydh@aydho.com">aydh@aydho.com</a>.</p>
+
+<h2>Getting started</h2>
+<p>Tap + on the Servers screen, enter your MCP server's URL and save. Tap the server to connect. Lantern negotiates the protocol version automatically and signs you in with OAuth if the server asks for it.</p>
+
+<h2>Common questions</h2>
+<p><strong>Can Lantern reach a server on my Mac or local network?</strong> Yes. Allow local network access when iOS asks, then use your computer's local IP address or hostname rather than <code>localhost</code>.</p>
+<p><strong>Does Lantern support stdio servers?</strong> iOS apps can't launch local processes, so use a stdio-to-HTTP bridge and connect to its URL.</p>
+<p><strong>Where are my credentials stored?</strong> In the iOS Keychain on your device. Lantern has no backend.</p>
+
+<h2>Privacy</h2>
+<p>Lantern collects no data. Read the <a href="privacy.html">privacy policy</a>.</p>
+</main>
+</body>
+</html>

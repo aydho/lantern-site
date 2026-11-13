@@ -4,7 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lantern</title>
-<meta http-equiv="refresh" content="0; url=privacy.html">
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --muted: #6e6e73; --bg: #fff; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f5f5f7; --muted: #a1a1a6; --bg: #000; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px; }
+  h1 { font-size: 32px; margin: 0 0 4px; }
+  .muted { color: var(--muted); }
+</style>
 </head>
-<body><p><a href="privacy.html">Lantern Privacy Policy</a></p></body>
+<body>
+<main>
+<h1>Lantern</h1>
+<p class="muted">An inspector for Model Context Protocol (MCP) servers on iPhone and iPad.</p>
+<p><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:aydh@aydho.com">aydh@aydho.com</a></p>
+</main>
+</body>
 </html>
